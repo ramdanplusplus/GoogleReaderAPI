@@ -65,7 +65,8 @@ module GoogleReaderApi
     private
 
     def get_user_items(state,args={})
-      @api.get_link "atom/user/-/state/com.google/#{state}" , args
+      #@api.get_link "atom/user/-/state/com.google/#{state}" , args
+      @api.get_link "api/0/stream/contents/user/-/state/com.google/#{state}" , args
     end
 
     def get_feed_items(args={})
