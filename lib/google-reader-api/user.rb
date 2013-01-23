@@ -29,6 +29,10 @@ module GoogleReaderApi
     def feeds
       subscriptions.feeds
     end
+
+    def feed(feed_url)
+      @feed ||= GoogleReaderApi::Feed.new(Hash.new, @api, feed_url)
+    end
     
   end
 end
