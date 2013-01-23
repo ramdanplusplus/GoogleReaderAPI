@@ -24,7 +24,8 @@ module GoogleReaderApi
     end
 
     def to_s
-      "<<Entry: #{@entry['title']} >>"
+      #"<<Entry: #{@entry['title']} >>"
+      "#{@entry['title']}"
     end
     
     private 

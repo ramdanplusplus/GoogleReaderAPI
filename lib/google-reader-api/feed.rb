@@ -59,7 +59,8 @@ module GoogleReaderApi
     end
 
     def to_s
-      "<<Feed: #{title} url:#{url}>>"
+      #"<<Feed: #{title} url:#{url}>>"
+      "#{title} url:#{url}"
     end
 
     private
